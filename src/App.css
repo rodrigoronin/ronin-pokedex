@@ -1,0 +1,11 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  color: aliceblue;
+  -webkit-font-smoothing: antialiased;
+}
