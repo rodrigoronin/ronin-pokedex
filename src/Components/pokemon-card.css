@@ -2,16 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
+  margin: 5px;
+  margin-bottom: 20px;
   border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #fff;
+  color: aliceblue;
 }
 
 .pokemon-name {
   width: 100%;
   text-align: center;
   height: auto;
-  background: tomato;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 
@@ -31,14 +33,218 @@
 .pokemon-image img {
   border-radius: 10px;
   max-width: 80%;
-  height: auto;
+  max-height: 180px;
 }
 
 .pokemon-info {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   width: 100%;
   height: 40px;
-  padding: 0 15px;
+  color: rgb(54, 54, 54);
+}
+
+.pokemon-info button {
+  background-color: #633dad;
+  border: none;
+  width: 50px;
+  color: white;
+  height: 25px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pokemon-info button:hover,
+.pokemon-info button:active,
+.pokemon-info button:visited {
+  border: none;
+  outline: none;
+}
+
+/* POKEMON NAME COLORS BY TYPES */
+:root {
+  --grass: #78c850;
+  --fire: #f08030;
+  --flying: #a890f0;
+  --water: #6890f0;
+  --bug: #a8b820;
+  --poison: #a040a0;
+  --normal: #a8a878;
+  --electric: #f8d030;
+  --ground: #e0c068;
+  --fairy: #ee99ac;
+  --fighting: #c03028;
+  --psychic: #f85888;
+  --rock: #b8a038;
+  --steel: #b8b8d0;
+  --ice: #98d8d8;
+  --ghost: #705898;
+  --dragon: #7038f8;
+}
+.Grass {
+  background-color: var(--grass);
+}
+
+.Fire {
+  background-color: var(--fire);
+}
+
+.Flying {
+  background-color: var(--flying);
+}
+
+.Water {
+  background-color: var(--water);
+}
+
+.Bug {
+  background-color: var(--bug);
+}
+
+.Poison {
+  background-color: var(--poison);
+}
+
+.Normal {
+  background-color: var(--normal);
+}
+
+.Electric {
+  background-color: var(--electric);
+}
+
+.Ground {
+  background-color: var(--ground);
+}
+
+.Fairy {
+  background-color: var(--fairy);
+}
+
+.Fighting {
+  background-color: var(--fighting);
+}
+
+.Psychic {
+  background-color: var(--psychic);
+}
+
+.Rock {
+  background-color: var(--rock);
+}
+
+.Steel {
+  background-color: var(--steel);
+}
+
+.Dragon {
+  background-color: var(--dragon);
+}
+
+/* DUAL GRASS TYPES */
+.GrassPoison {
+  background: linear-gradient(145deg, var(--grass) 40%, var(--poison) 60%);
+}
+.GrassPsychic {
+  background: linear-gradient(145deg, var(--grass) 40%, var(--psychic) 60%);
+}
+
+/* DUAL FYRE TYPES */
+.FireFlying {
+  background: linear-gradient(145deg, var(--fire) 40%, var(--flying) 60%);
+}
+.FireFlying {
+  background: linear-gradient(145deg, var(--fire) 40%, var(--flying) 60%);
+}
+
+/* DUAL BUG TYPES */
+.BugFlying {
+  background: linear-gradient(145deg, var(--bug) 40%, var(--flying) 60%);
+}
+.BugPoison {
+  background: linear-gradient(145deg, var(--bug) 40%, var(--poison) 60%);
+}
+.BugGrass {
+  background: linear-gradient(145deg, var(--bug) 40%, var(--grass) 60%);
+}
+
+/* DUAL NORMAL TYPES */
+.NormalFlying {
+  background: linear-gradient(145deg, var(--normal) 40%, var(--flying) 60%);
+}
+.NormalFairy {
+  background: linear-gradient(145deg, var(--normal) 40%, var(--fairy) 60%);
+}
+
+/* DUAL POISON TYPES */
+.PoisonGround {
+  background: linear-gradient(145deg, var(--poison) 40%, var(--ground) 60%);
+}
+.PoisonFlying {
+  background: linear-gradient(145deg, var(--poison) 40%, var(--flying) 60%);
+}
+
+/* DUAL WATER TYPES */
+.WaterFighting {
+  background: linear-gradient(145deg, var(--water) 40%, var(--fighting) 60%);
+}
+.WaterPoison {
+  background: linear-gradient(145deg, var(--water) 40%, var(--poison) 60%);
+}
+.WaterPsychic {
+  background: linear-gradient(145deg, var(--water) 40%, var(--psychic) 60%);
+}
+.WaterIce {
+  background: linear-gradient(145deg, var(--water) 40%, var(--ice) 60%);
+}
+.WaterFlying {
+  background: linear-gradient(145deg, var(--water) 40%, var(--flying) 60%);
+}
+
+/* DUAL ROCK TYPES */
+.RockWater {
+  background: linear-gradient(145deg, var(--rock) 40%, var(--water) 60%);
+}
+.RockFlying {
+  background: linear-gradient(145deg, var(--rock) 40%, var(--flying) 60%);
+}
+.RockGround {
+  background: linear-gradient(145deg, var(--rock) 40%, var(--ground) 60%);
+}
+
+/* DUAL GROUND TYPES */
+.GroundRock {
+  background: linear-gradient(145deg, var(--ground) 40%, var(--rock) 60%);
+}
+
+/* DUAL ELECTRIC TYPES */
+.ElectricSteel {
+  background: linear-gradient(145deg, var(--electric) 40%, var(--steel) 60%);
+}
+.ElectricFlying {
+  background: linear-gradient(145deg, var(--electric) 40%, var(--flying) 60%);
+}
+
+/* DUAL GHOST TYPES */
+.GhostPoison {
+  background: linear-gradient(145deg, var(--ghost) 40%, var(--poison) 60%);
+}
+
+/* DUAL PSYCHIC TYPES */
+.PsychicFairy {
+  background: linear-gradient(145deg, var(--psychic) 40%, var(--fairy) 60%);
+}
+
+/* DUAL ICE TYPES */
+.IcePsychic {
+  background: linear-gradient(145deg, var(--ice) 40%, var(--psychic) 60%);
+}
+.IceFlying {
+  background: linear-gradient(145deg, var(--ice) 40%, var(--flying) 60%);
+}
+
+/* DUAL DRAGON TYPES */
+.DragonFlying {
+  background: linear-gradient(145deg, var(--dragon) 40%, var(--flying) 60%);
 }

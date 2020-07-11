@@ -6,13 +6,8 @@ export const GET_POKEMONS = graphql`
       id
       number
       name
+      types
       image
-      attacks {
-        special {
-          name
-          damage
-        }
-      }
     }
   }
 `;

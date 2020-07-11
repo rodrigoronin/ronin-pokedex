@@ -7,16 +7,24 @@ import './styles.css';
 
 const Pokedex = () => {
   const { data: { pokemons = [] } = {} } = useQuery(GET_POKEMONS, {
-    variables: { first: 9 },
+    variables: { first: 151 },
   });
 
   return (
     <Fragment>
       {/* <h1>Pokedex</h1> */}
-      <div className="pokemons-container">
-        {pokemons.map(pokemon => (
-          <PokemonCard key={pokemon.id} pokemon={pokemon} />
-        ))}
+      <div className="pokedex">
+        <div className="pokedex-search">
+          <div className="ball">
+            <div className="glass"></div>
+          </div>
+          <div className="input-container"></div>
+        </div>
+        <div className="pokemons-container">
+          {pokemons.map(pokemon => (
+            <PokemonCard key={pokemon.id} pokemon={pokemon} />
+          ))}
+        </div>
       </div>
     </Fragment>
   );

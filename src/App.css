@@ -5,7 +5,8 @@
 }
 
 body {
+  background: #d73836;
+
   line-height: 1;
-  color: aliceblue;
   -webkit-font-smoothing: antialiased;
 }
