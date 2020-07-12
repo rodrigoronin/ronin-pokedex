@@ -1,68 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://i.imgur.com/TevaHmY.png">
+</p>
 
-## Available Scripts
+<h1 align="center">:sparkling_heart: Ronin Pokédex Version (in development) :sparkling_heart:</h1>
+<p align="center">
+  This is a Pokédex i've made using
+  <a href="https://github.com/lucasbento">Lucas Bento's</a>
+  <a href="https://github.com/lucasbento/graphql-pokemon">GraphQL Pokémon</a> interface.<br /><br />
+  <a href="https://ronin-pokedex.netlify.app/">Live Preview</a>
+</p>
 
-In the project directory, you can run:
+<h2 align="center">This project was made to test and learn some skills but, as a pokémon fan, i've added some love into it.</h2>
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+# :computer: Project Details
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technologies Used
 
-### `yarn build`
+  - React;
+  - Redux;
+  - React-Router;
+  - GraphQL;
+  - Apollo;
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### :floppy_disk: Instalattion Guide
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+First clone this repository to your machine. If you don't know how to do it, check this guide [Cloning a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
-### `yarn eject`
+Open your terminal and navigate to the project folder. Make sure you have yarn installed and run this command on your terminal to install all the project dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`yarn`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+After yarn finish installations run this command to start the project. It will automatically opens a browser window on localhost/3000:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`yarn dev`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Enjoy! :musical_note: :tada:
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### :clipboard: Funcionalities
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+When the app launches it will show a list of pokémons in the homepage. They'll be listed from 1 to 151 in the cards inside the pokédex container.
 
-### Code Splitting
+>   Inside the app you can search for a specific pokémon by typing its name in the search field:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+<img src="https://i.imgur.com/CWw9dKr.png">
 
-### Analyzing the Bundle Size
+>   Or list pokémons by their types:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+<img src="https://i.imgur.com/j3OJdHg.png">
 
-### Making a Progressive Web App
+>   You can click on the info button on a card to show more information about that specific pokémon:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<img src="https://i.imgur.com/4T03w3e.png">
