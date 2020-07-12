@@ -17,7 +17,8 @@
 
 # :computer: Project Details
 
-### Technologies Used
+
+## Technologies Used
 
   - React;
   - Redux;
@@ -26,7 +27,9 @@
   - Apollo;
 
 
-### :floppy_disk: Instalattion Guide
+
+
+## :floppy_disk: Installation Guide
 
 First clone this repository to your machine. If you don't know how to do it, check this guide [Cloning a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
@@ -41,7 +44,9 @@ After yarn finish installations run this command to start the project. It will a
 Enjoy! :musical_note: :tada:
 
 
-### :clipboard: Funcionalities
+
+
+## :clipboard: Functionalities
 
 When the app launches it will show a list of pokémons in the homepage. They'll be listed from 1 to 151 in the cards inside the pokédex container.
 
@@ -56,3 +61,10 @@ When the app launches it will show a list of pokémons in the homepage. They'll 
 >   You can click on the info button on a card to show more information about that specific pokémon:
 
 <img src="https://i.imgur.com/4T03w3e.png">
+
+
+
+
+## Additional Notes
+
+Empty :open_mouth:
