@@ -1,20 +1,20 @@
 import React, { Fragment, useState } from 'react';
-import { useQuery } from '@apollo/react-hooks';
-import { GET_POKEMONS } from '../../GraphQL/Get_Pokemons';
-import PokemonCard from '../../Components/PokemonCard';
-
+import { connect } from 'react-redux';
 import { FaSearchengin } from 'react-icons/fa';
 
-import './styles.css';
+import PokedexHeader from '../../Components/PokedexHeader';
+import PokemonsContainer from '../../Components/PokemonsContainer';
+import PokemonCard from '../../Components/PokemonCard';
 
-const Pokedex = () => {
+import './styles.css';
+import { useEffect } from 'react';
+
+const Pokedex = ({ pokemons }) => {
   const [filteredPokemons, setFilteredPokemons] = useState([]);
-  const { data: { pokemons = [] } = {} } = useQuery(GET_POKEMONS, {
-    variables: { first: 151 },
-    onCompleted: data => {
-      setFilteredPokemons(data.pokemons);
-    },
-  });
+
+  useEffect(() => {
+    setFilteredPokemons(pokemons);
+  }, [pokemons]);
 
   const filterPokemons = e => {
     const searchString = e.target.value;
@@ -28,47 +28,28 @@ const Pokedex = () => {
         pokemon.types[0].toLowerCase().includes(searchString) ||
         pokemon.types[1]?.toLowerCase().includes(searchString)
       ) {
-        console.log(pokemon.name);
         return pokemon;
       }
     });
 
     setFilteredPokemons(filteredPokemons);
-    // });
   };
 
   return (
     <Fragment>
-      {/* <h1>Pokedex</h1> */}
-      <div className="pokedex">
-        <div className="pokedex-header">
-          <div className="ball-container">
-            <div className="ball">
-              <div className="glass"></div>
-            </div>
-            <div className="ball ball-red">
-              <div className="glass glass-red"></div>
-            </div>
-            <div className="ball ball-yellow">
-              <div className="glass glass-yellow"></div>
-            </div>
-            <div className="ball ball-green">
-              <div className="glass glass-green"></div>
-            </div>
-          </div>
-          <div className="search-pokemons">
-            <FaSearchengin className="search-icon" />
-            <input type="text" onChange={filterPokemons} />
-          </div>
+      <PokedexHeader>
+        <div className="search-pokemons">
+          <FaSearchengin className="search-icon" />
+          <input type="text" onChange={filterPokemons} />
         </div>
-        <div className="pokemons-container">
-          {filteredPokemons.map(pokemon => (
-            <PokemonCard key={pokemon.id} pokemon={pokemon} />
-          ))}
-        </div>
-      </div>
+      </PokedexHeader>
+      <PokemonsContainer isLoaded={filteredPokemons.length}>
+        {filteredPokemons.map(pokemon => (
+          <PokemonCard key={pokemon.id} pokemon={pokemon} />
+        ))}
+      </PokemonsContainer>
     </Fragment>
   );
 };
 
-export default Pokedex;
+export default connect(state => ({ pokemons: state.pokemons }))(Pokedex);

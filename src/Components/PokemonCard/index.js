@@ -14,11 +14,11 @@ const PokemonCard = ({ pokemon }) => {
       <div className="pokemon-image">
         <img src={pokemon.image} alt={pokemon.name} />
       </div>
-      <div className="pokemon-info">
+      <div className="pokemon-types">
         {pokemon.types.map(type => (
           <span key={type}>{type}</span>
         ))}
-        <Link to="/pokemon_info">
+        <Link to={`/pokemon_info${pokemon.id}`}>
           <button>info</button>
         </Link>
       </div>

@@ -36,7 +36,7 @@
   max-height: 180px;
 }
 
-.pokemon-info {
+.pokemon-types {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -45,7 +45,7 @@
   color: rgb(54, 54, 54);
 }
 
-.pokemon-info button {
+.pokemon-types button {
   background-color: #633dad;
   border: none;
   width: 50px;
@@ -55,9 +55,9 @@
   cursor: pointer;
 }
 
-.pokemon-info button:hover,
-.pokemon-info button:active,
-.pokemon-info button:visited {
+.pokemon-types button:hover,
+.pokemon-types button:active,
+.pokemon-types button:visited {
   border: none;
   outline: none;
 }
@@ -138,113 +138,119 @@
   background-color: var(--steel);
 }
 
+.Ice {
+  background-color: var(--ice);
+}
+.Ghost {
+  background-color: var(--ghost);
+}
 .Dragon {
   background-color: var(--dragon);
 }
 
 /* DUAL GRASS TYPES */
 .GrassPoison {
-  background: linear-gradient(145deg, var(--grass) 40%, var(--poison) 60%);
+  background: linear-gradient(155deg, var(--grass) 45%, var(--poison) 55%);
 }
 .GrassPsychic {
-  background: linear-gradient(145deg, var(--grass) 40%, var(--psychic) 60%);
+  background: linear-gradient(155deg, var(--grass) 45%, var(--psychic) 55%);
 }
 
 /* DUAL FYRE TYPES */
 .FireFlying {
-  background: linear-gradient(145deg, var(--fire) 40%, var(--flying) 60%);
+  background: linear-gradient(155deg, var(--fire) 45%, var(--flying) 55%);
 }
 .FireFlying {
-  background: linear-gradient(145deg, var(--fire) 40%, var(--flying) 60%);
+  background: linear-gradient(155deg, var(--fire) 45%, var(--flying) 55%);
 }
 
 /* DUAL BUG TYPES */
 .BugFlying {
-  background: linear-gradient(145deg, var(--bug) 40%, var(--flying) 60%);
+  background: linear-gradient(155deg, var(--bug) 45%, var(--flying) 55%);
 }
 .BugPoison {
-  background: linear-gradient(145deg, var(--bug) 40%, var(--poison) 60%);
+  background: linear-gradient(155deg, var(--bug) 45%, var(--poison) 55%);
 }
 .BugGrass {
-  background: linear-gradient(145deg, var(--bug) 40%, var(--grass) 60%);
+  background: linear-gradient(155deg, var(--bug) 45%, var(--grass) 55%);
 }
 
 /* DUAL NORMAL TYPES */
 .NormalFlying {
-  background: linear-gradient(145deg, var(--normal) 40%, var(--flying) 60%);
+  background: linear-gradient(155deg, var(--normal) 45%, var(--flying) 55%);
 }
 .NormalFairy {
-  background: linear-gradient(145deg, var(--normal) 40%, var(--fairy) 60%);
+  background: linear-gradient(155deg, var(--normal) 45%, var(--fairy) 55%);
 }
 
 /* DUAL POISON TYPES */
 .PoisonGround {
-  background: linear-gradient(145deg, var(--poison) 40%, var(--ground) 60%);
+  background: linear-gradient(155deg, var(--poison) 45%, var(--ground) 55%);
 }
 .PoisonFlying {
-  background: linear-gradient(145deg, var(--poison) 40%, var(--flying) 60%);
+  background: linear-gradient(155deg, var(--poison) 45%, var(--flying) 55%);
 }
 
 /* DUAL WATER TYPES */
 .WaterFighting {
-  background: linear-gradient(145deg, var(--water) 40%, var(--fighting) 60%);
+  background: linear-gradient(155deg, var(--water) 45%, var(--fighting) 55%);
 }
 .WaterPoison {
-  background: linear-gradient(145deg, var(--water) 40%, var(--poison) 60%);
+  background: linear-gradient(155deg, var(--water) 45%, var(--poison) 55%);
 }
 .WaterPsychic {
-  background: linear-gradient(145deg, var(--water) 40%, var(--psychic) 60%);
+  background: linear-gradient(155deg, var(--water) 45%, var(--psychic) 55%);
 }
 .WaterIce {
-  background: linear-gradient(145deg, var(--water) 40%, var(--ice) 60%);
+  background: linear-gradient(155deg, var(--water) 45%, var(--ice) 55%);
 }
 .WaterFlying {
-  background: linear-gradient(145deg, var(--water) 40%, var(--flying) 60%);
+  background: linear-gradient(155deg, var(--water) 45%, var(--flying) 55%);
 }
 
 /* DUAL ROCK TYPES */
 .RockWater {
-  background: linear-gradient(145deg, var(--rock) 40%, var(--water) 60%);
+  background: linear-gradient(155deg, var(--rock) 45%, var(--water) 55%);
 }
 .RockFlying {
-  background: linear-gradient(145deg, var(--rock) 40%, var(--flying) 60%);
+  background: linear-gradient(155deg, var(--rock) 45%, var(--flying) 55%);
 }
 .RockGround {
-  background: linear-gradient(145deg, var(--rock) 40%, var(--ground) 60%);
+  background: linear-gradient(155deg, var(--rock) 45%, var(--ground) 55%);
 }
 
 /* DUAL GROUND TYPES */
 .GroundRock {
-  background: linear-gradient(145deg, var(--ground) 40%, var(--rock) 60%);
+  background: linear-gradient(155deg, var(--ground) 45%, var(--rock) 55%);
 }
 
 /* DUAL ELECTRIC TYPES */
 .ElectricSteel {
-  background: linear-gradient(145deg, var(--electric) 40%, var(--steel) 60%);
+  background: linear-gradient(155deg, var(--electric) 45%, var(--steel) 55%);
 }
 .ElectricFlying {
-  background: linear-gradient(145deg, var(--electric) 40%, var(--flying) 60%);
+  background: linear-gradient(155deg, var(--electric) 45%, var(--flying) 55%);
 }
 
 /* DUAL GHOST TYPES */
 .GhostPoison {
-  background: linear-gradient(145deg, var(--ghost) 40%, var(--poison) 60%);
+  background: linear-gradient(155deg, var(--ghost) 45%, var(--poison) 55%);
 }
 
 /* DUAL PSYCHIC TYPES */
 .PsychicFairy {
-  background: linear-gradient(145deg, var(--psychic) 40%, var(--fairy) 60%);
+  background: linear-gradient(155deg, var(--psychic) 45%, var(--fairy) 55%);
 }
 
 /* DUAL ICE TYPES */
 .IcePsychic {
-  background: linear-gradient(145deg, var(--ice) 40%, var(--psychic) 60%);
+  background: linear-gradient(155deg, var(--ice) 45%, var(--psychic) 55%);
 }
 .IceFlying {
-  background: linear-gradient(145deg, var(--ice) 40%, var(--flying) 60%);
+  background: linear-gradient(155deg, var(--ice) 45%, var(--flying) 55%);
 }
 
 /* DUAL DRAGON TYPES */
 .DragonFlying {
-  background: linear-gradient(145deg, var(--dragon) 40%, var(--flying) 60%);
+  background: linear-gradient(155deg, var(--dragon) 45%, var(--flying) 55%);
 }

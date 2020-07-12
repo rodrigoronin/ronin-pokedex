@@ -1,17 +1,28 @@
 import React from 'react';
-import { ApolloProvider } from '@apollo/react-hooks';
+import { useQuery } from '@apollo/react-hooks';
+import { GET_POKEMONS } from './GraphQL/Get_Pokemons';
+import { connect } from 'react-redux';
 
 import Routes from './routes';
-import api from './services/api';
 
 import './App.css';
 
-function App() {
-  return (
-    <ApolloProvider client={api}>
-      <Routes />
-    </ApolloProvider>
-  );
-}
+const App = ({ initialPokemons, dispatch }) => {
+  const { data: { pokemons = [] } = {} } = useQuery(GET_POKEMONS, {
+    variables: { first: 151 },
+    onCompleted: data => {
+      dispatch({
+        type: 'INITIAL_POKEMON_DATA',
+        pokemons,
+      });
+    },
+  });
 
-export default App;
+  return (
+    <div className="pokedex">
+      <Routes />
+    </div>
+  );
+};
+
+export default connect(state => ({ initialPokemons: state.pokemons }))(App);

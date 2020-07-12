@@ -1,0 +1,40 @@
+.pokemon-info {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 300px;
+  padding: 10px;
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.info-header {
+  width: 100%;
+  color: rgb(47, 47, 47);
+  text-align: center;
+}
+
+.info-header h4 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.attack {
+  flex: 0 1;
+  min-width: 44%;
+  height: 34px;
+  margin: 8px;
+  padding: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 490px) {
+  .attack {
+    flex: 1 1;
+  }
+}

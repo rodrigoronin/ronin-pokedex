@@ -8,6 +8,13 @@ export const GET_POKEMONS = graphql`
       name
       types
       image
+      attacks {
+        special {
+          name
+          type
+          damage
+        }
+      }
     }
   }
 `;

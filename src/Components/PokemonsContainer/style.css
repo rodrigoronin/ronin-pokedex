@@ -1,0 +1,75 @@
+.pokemons-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+  min-height: 450px;
+
+  background: #000;
+  border: 30px solid #d6d6d6;
+  border-radius: 5px;
+  border-bottom-left-radius: 113px;
+  padding: 15px 0;
+}
+
+.loading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 270px;
+  color: #fff;
+}
+
+.loading img {
+  z-index: 10;
+  max-width: 40%;
+  border-radius: 50%;
+}
+
+.pokeball {
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.image-shadow {
+  z-index: 5;
+  position: absolute;
+  top: 70%;
+  z-index: 5;
+  height: 90px;
+  width: 205px;
+  /* transform: rotate3d(0, -11, 20, 180deg); */
+  transform: rotate(180deg);
+  opacity: 0.1;
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
