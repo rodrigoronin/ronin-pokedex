@@ -25,10 +25,9 @@
   - React-Router;
   - GraphQL;
   - Apollo;
-
-
-
-
+  
+  
+<br /><br />
 ## :floppy_disk: Installation Guide
 
 First clone this repository to your machine. If you don't know how to do it, check this guide [Cloning a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
@@ -45,7 +44,7 @@ Enjoy! :musical_note: :tada:
 
 
 
-
+<br /><br />
 ## :clipboard: Functionalities
 
 When the app launches it will show a list of pokémons in the homepage. They'll be listed from 1 to 151 in the cards inside the pokédex container.
@@ -64,7 +63,7 @@ When the app launches it will show a list of pokémons in the homepage. They'll 
 
 
 
-
+<br /><br />
 ## Additional Notes
 
 Empty :open_mouth:
