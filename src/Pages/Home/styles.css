@@ -25,6 +25,12 @@
   width: 280px;
 }
 
+.search-pokemons svg {
+  color: white;
+  width: 35px;
+  height: 35px;
+}
+
 .search-pokemons input {
   border: none;
   border: none;

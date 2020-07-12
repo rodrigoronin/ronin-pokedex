@@ -25,8 +25,8 @@ const Pokedex = () => {
       }
 
       if (
-        pokemon.types[0].toLowerCase() === searchString ||
-        pokemon.types[1]?.toLowerCase() === searchString
+        pokemon.types[0].toLowerCase().includes(searchString) ||
+        pokemon.types[1]?.toLowerCase().includes(searchString)
       ) {
         console.log(pokemon.name);
         return pokemon;
@@ -56,9 +56,6 @@ const Pokedex = () => {
               <div className="glass glass-green"></div>
             </div>
           </div>
-          {/* <div className="pokedex-title">
-            <span>POKÉMON</span>
-          </div> */}
           <div className="search-pokemons">
             <FaSearchengin className="search-icon" />
             <input type="text" onChange={filterPokemons} />
