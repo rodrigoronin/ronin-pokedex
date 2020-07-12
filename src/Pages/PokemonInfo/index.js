@@ -14,7 +14,7 @@ const PokemonInfo = ({ match, pokemons, dispatch }) => {
 
   useEffect(() => {
     pokemons.filter(pokemon => {
-      if (pokemon.id === match.params.id) {
+      if (pokemon.name === match.params.name) {
         setPokemonData(pokemon);
       }
       return pokemon;
@@ -25,14 +25,14 @@ const PokemonInfo = ({ match, pokemons, dispatch }) => {
     <Fragment>
       <PokedexHeader />
       <PokemonsContainer isLoaded={pokemons.length}>
-        <div>
-          <Link to="/">
-            <GiReturnArrow
-              style={{ color: 'white', width: '50px', height: '50px' }}
-            />
-          </Link>
-        </div>
-        {pokemonData.id !== undefined && <PokemonCard pokemon={pokemonData} />}
+        <Link to="/">
+          <GiReturnArrow
+            style={{ color: 'white', width: '50px', height: '50px' }}
+          />
+        </Link>
+        {pokemonData.id !== undefined && (
+          <PokemonCard info={false} pokemon={pokemonData} />
+        )}
         <div className="pokemon-card pokemon-info">
           <div className="info-header">
             <h4>Attacks List</h4>

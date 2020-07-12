@@ -45,7 +45,7 @@ const Pokedex = ({ pokemons }) => {
       </PokedexHeader>
       <PokemonsContainer isLoaded={filteredPokemons.length}>
         {filteredPokemons.map(pokemon => (
-          <PokemonCard key={pokemon.id} pokemon={pokemon} />
+          <PokemonCard key={pokemon.id} pokemon={pokemon} info={true} />
         ))}
       </PokemonsContainer>
     </Fragment>

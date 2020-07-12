@@ -81,6 +81,7 @@
   --ice: #98d8d8;
   --ghost: #705898;
   --dragon: #7038f8;
+  --dark: #705848;
 }
 .Grass {
   background-color: var(--grass);
@@ -141,11 +142,17 @@
 .Ice {
   background-color: var(--ice);
 }
+
 .Ghost {
   background-color: var(--ghost);
 }
+
 .Dragon {
   background-color: var(--dragon);
+}
+
+.Dark {
+  background-color: var(--dark);
 }
 
 /* DUAL GRASS TYPES */

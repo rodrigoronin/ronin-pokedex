@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './pokemon-card.css';
 
-const PokemonCard = ({ pokemon }) => {
+const PokemonCard = ({ info, pokemon }) => {
   return (
     <div className="pokemon-card">
       <div className={`pokemon-name ${pokemon.types.join('')}`}>
@@ -18,9 +18,11 @@ const PokemonCard = ({ pokemon }) => {
         {pokemon.types.map(type => (
           <span key={type}>{type}</span>
         ))}
-        <Link to={`/pokemon_info${pokemon.id}`}>
-          <button>info</button>
-        </Link>
+        {info && (
+          <Link to={`/pokemon_info/${pokemon.name}`}>
+            <button>info</button>
+          </Link>
+        )}
       </div>
     </div>
   );
