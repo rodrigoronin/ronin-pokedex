@@ -2,6 +2,8 @@
   <img src="https://i.imgur.com/TevaHmY.png">
 </p>
 
+<h3 align="center">NOTE: The GraphQL api which i was using was shutdown. I`ll change to another api in the comming days.</h3>
+
 <h1 align="center">:sparkling_heart: Ronin Pokédex Version (in development) :sparkling_heart:</h1>
 <p align="center">
   This is a Pokédex i've made using
